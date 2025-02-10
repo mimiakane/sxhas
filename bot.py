@@ -93,7 +93,7 @@ async def on_message(message):
                     embed = discord.Embed(title=f"📺 {row['name']}", description=f"Tập {episode}", color=discord.Color.from_rgb(52, 152, 219))
                     embed.add_field(name="🔗 Link", value=row['link'], inline=False)
                     embed.set_thumbnail(url=THUMBNAIL_URL)
-                    embed.set_footer(text="Dữ liệu cập nhật đến 5/1/2025")
+                    embed.set_footer(text="Dữ liệu cập nhật đến 10/02/2025")
                     await message.channel.send(embed=embed)
             else:
                 await message.channel.send(f"Không tìm thấy anime với từ khóa '{keywords}' tập {episode}.")
@@ -132,7 +132,7 @@ async def search_anime(ctx, *, anime_name: str):
         field_count += 1
 
     if field_count > 0:
-        embed.set_footer(text="Dữ liệu cập nhật đến 5/1/2025")
+        embed.set_footer(text="Dữ liệu cập nhật đến 10/02/2025")
         await ctx.send(embed=embed)
 
 bot.run(os.getenv('ANIME'))
