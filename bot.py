@@ -121,7 +121,7 @@ async def search_anime(ctx, *, anime_name: str):
     field_count = 0
     for index, row in result.iterrows():
         if field_count >= 25:
-            embed.set_footer(text="Dữ liệu cập nhật đến 5/1/2025")
+            embed.set_footer(text="Dữ liệu cập nhật đến 10/2/2025")
             await ctx.send(embed=embed)
 
             embed = discord.Embed(title=f"🔍 Kết quả tìm kiếm cho '{anime_name}' (tiếp theo)", color=discord.Color.from_rgb(231, 76, 60))
