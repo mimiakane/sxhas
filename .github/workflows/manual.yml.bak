@@ -22,7 +22,7 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 21600  # Set a 1-hour timeout for each job (1h x 60m)
+    timeout-minutes: 360  # Set a 6-hour timeout for each job (6h x 60m)
     concurrency:
       group: ${{ github.ref }}
       cancel-in-progress: false  # Avoid canceling in-progress jobs
